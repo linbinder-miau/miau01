@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mauzi's Website</title>
+<style>
+    :root {
+        --bg-color: #fff7f0;
+        --text-color: #333;
+        --header-bg: #ff8c69;
+        --nav-bg: #ff7043;
+        --link-color: #ff7043;
+        --card-bg: #fff1e6;
+    }
+
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    header {
+        background-color: var(--header-bg);
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav {
+        background: var(--nav-bg);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 10px 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 50px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h2 {
+        color: var(--link-color);
+    }
+
+    .about-mauzi {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-mauzi img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid var(--link-color);
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    .blog-post {
+        background: var(--card-bg);
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .blog-post h3 {
+        margin-top: 0;
+    }
+
+    .blog-post a {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+    footer {
+        background: var(--nav-bg);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-mauzi {
+            justify-content: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Mauzi's World 🐾</h1>
+    <p>Follow the adventures and cute moments of Mauzi, the adorable cat!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About Mauzi</a></li>
+        <li><a href="#gallery">Photo Gallery</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Mauzi</h2>
+    <div class="about-mauzi">
+        <img src="mauzi1.jpg" alt="Mauzi Photo">
+        <p>Mauzi is a playful and curious cat who loves napping in sunny spots, chasing toys, and exploring new places. She has a charming personality that melts hearts wherever she goes!</p>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="mauzi1.jpg" alt="Mauzi Photo 1">
+        <img src="mauzi2.jpg" alt="Mauzi Photo 2">
+        <img src="mauzi3.jpg" alt="Mauzi Photo 3">
+        <img src="mauzi4.jpg" alt="Mauzi Photo 4">
+    </div>
+</section>
+
+<section id="blog">
+    <h2>Blog Posts</h2>
+    <div class="blog-post">
+        <h3>Mauzi's First Adventure</h3>
+        <p>Today Mauzi explored the garden for the first time. She was so curious about the butterflies and the flowers!</p>
+        <a href="#">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h3>Naptime Chronicles</h3>
+        <p>Mauzi found a sunny spot on the sofa and took a long, peaceful nap. It's amazing how cats can sleep so comfortably!</p>
+        <a href="#">Read More</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact / Follow Mauzi</h2>
+    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p>Social Media: 
+        <a href="#">Instagram</a> | 
+        <a href="#">TikTok</a> | 
+        <a href="#">Twitter</a>
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mauzi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
